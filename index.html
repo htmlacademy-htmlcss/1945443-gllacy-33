@@ -24,11 +24,9 @@
           </li>
         </ul> <!-- navigation-menu -->
 
-        <ul class="navigation-list navigation-actions">
+        <ul class="navigation__list navigation-actions">
           <li class="navigation__item">
-            <a class="navigation__phone" href="tel:+78005558628">
-              <span class="navigation__phone">+7 800 555-86-28</span>
-            </a>
+            <a class="navigation__phone" href="tel:+78005558628">+7 800 555-86-28</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="#">
@@ -54,15 +52,15 @@
       <section class="presentaion">
         <h2 class="visually-hidden">Попробуйте наши новинки</h2>
         <div class="presentation__description">
-          <div class="description-item active-item">
+          <div class="description__item active-item">
             <h3 class="description__title">Нежный пломбир с клубничным джемом</h3>
             <span class="description__about">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</span>
           </div>
-          <div class="description-item">
+          <div class="description__item">
             <h3 class="description__title">Сливочное мороженое со вкусом банана</h3>
             <span class="description__about">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.</span>
           </div>
-          <div class="description-item">
+          <div class="description__item">
             <h3 class="description__title">Карамельный пломбир с маршмеллоу</h3>
             <span class="description__about">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.</span>
           </div>
@@ -102,7 +100,8 @@
         </div> <!-- slider-dots -->
 
         <div class="social">
-          <ul class="social-list">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul class="social__list">
             <li class="social__item">
               <a class="button social-button" href="https://vk.com/htmlacademy" target="_blank">
                 <span class="visually-hidden">ВКонтакте</span>
@@ -126,21 +125,21 @@
         <h2 class="section__title">Заказывайте мороженое и получайте подарки!</h2>
         <div class="gifts__gift">
           <h3 class="gift__heading">Малинка даром!</h3>
-          <span class="gift__text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</span>
+          <p class="gift__text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
           <a class="button" href="catalog.html">Хочу подарок</a>
         </div>
 
         <div class="gifts__gift">
           <h3 class="gift__heading">Маршмеллоу даром!</h3>
-          <span class="gift__text">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</span>
+          <p class="gift__text">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
           <a class="button" href="catalog.html">Хочу подарок</a>
         </div>
       </section> <!-- gifts -->
 
       <section class="popular">
         <h2 class="section__title">Попробуйте самые популярные вкусы нашего мороженого</h2>
-        <ul class="product-list">
-          <li class="product-card">
+        <ul class="products-list">
+          <li class="product">
             <img class="product__img" src="" alt="Сливочное мороженое с малиновым джемом">
             <h3 class="product__name">Малинка</h3>
             <span class="product__description">Сливочное мороженое с малиновым джемом</span>
@@ -150,7 +149,7 @@
             </button>
           </li>
 
-          <li class="product-card">
+          <li class="product">
             <img class="product__img" src="" alt="Фисташковый пломбир с кусочками шоколада">
             <h3 class="product__name">Фисташка</h3>
             <span class="product__description">Фисташковый пломбир с кусочками шоколада</span>
@@ -160,7 +159,7 @@
             </button>
           </li>
 
-          <li class="product-card">
+          <li class="product">
             <img class="product__img" src="" alt="Крем-брюле с черничным джемом">
             <h3 class="product__name">Черника</h3>
             <span class="product__description">Крем-брюле с черничным джемом</span>
@@ -170,7 +169,7 @@
             </button>
           </li>
 
-          <li class="product-card">
+          <li class="product">
             <img class="product__img" src="" alt="Ванильный пломбир со сладкой посыпкой">
             <h3 class="product__name">Бабл-гам</h3>
             <span class="product__description">Ванильный пломбир со сладкой посыпкой</span>
@@ -200,9 +199,9 @@
         <div class="updates__subscribe">
           <span class="subscribe__text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</span>
           <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="subscribe-email">Email</label>
-          <input class="subscribe__email" name="email" type="email" id="subscribe-email" placeholder="email@example.com">
-          <button class="button send__button" type="submit">Отправить</button>
+            <label class="visually-hidden" for="subscribe-email">Email</label>
+            <input class="subscribe__email" name="email" type="email" id="subscribe-email" placeholder="email@example.com">
+            <button class="button send__button" type="submit">Отправить</button>
           </form>
         </div>
       </section> <!-- updates -->
@@ -247,7 +246,7 @@
     <footer class="index-footer">
       <section class="social">
         <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="social-list">
+        <ul class="social__list">
           <li class="social__item">
             <a class="button social-button" href="https://vk.com/htmlacademy" target="_blank">
               <span class="visually-hidden">ВКонтакте</span>
