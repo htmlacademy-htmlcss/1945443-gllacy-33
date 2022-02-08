@@ -103,13 +103,20 @@ body.body-marshmallow {
 	margin: 0;
 }
 
-/*.container {
+.container {
+	display: flex;
+	flex-direction: column;
 	width: 100%;
 	max-width: calc(var(--container-width) + 5px + 5px);
 
 	margin: 0 auto;
 	padding: 0 5px;
-}*/
+}
+
+.index-main,
+.catalog-main {
+	flex-grow: 1;
+}
 
 /*-------------------------------header*/
 .index-header,
@@ -120,9 +127,9 @@ body.body-marshmallow {
 .navigation,
 .navigation__pages,
 .navigation__controls {
-	/*display: flex;
+	display: flex;
 	justify-content: space-between;
-	align-items: center;*/
+	align-items: center;
 }
 
 .navigation__list {
@@ -201,16 +208,16 @@ body.body-marshmallow {
 }
 
 .presentation__field {
-	/*display: flex;
-	justify-content: space-between;*/
+	display: flex;
+	justify-content: space-between;
 }
 
 
 .presentation__description {
-	/*display: flex;
+	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	justify-content: center;*/
+	justify-content: center;
 
 	padding: 0 0 0 70px;
 }
@@ -272,9 +279,9 @@ body.body-marshmallow {
 .slider__slides {
 	position: relative;
 
-	/*display: flex;
+	display: flex;
 	justify-content: space-between;
-	align-items: center;*/
+	align-items: center;
 
 	padding: 26px 0 21px 0;
 }
@@ -416,9 +423,9 @@ body.body-marshmallow {
 }
 
 .gifts__inner {
-	/*display: flex;
+	display: flex;
 	justify-content: space-between;
-	flex-wrap: wrap;*/
+	/*flex-wrap: wrap;*/
 
 	margin: 56px 0 0 0;
 }
@@ -575,10 +582,10 @@ body.body-marshmallow {
 }
 
 .ceo__list {
-	/*display: flex;
+	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	flex-wrap: wrap;*/
+	flex-wrap: wrap;
 
 	list-style-type: none;
 
@@ -663,9 +670,9 @@ body.body-marshmallow {
 }
 
 .updates__inner {
-	/*display: flex;
+	display: flex;
 	justify-content: space-between;
-	flex-wrap: wrap;*/
+	flex-wrap: wrap;
 }
 
 .updates-item {
@@ -752,9 +759,8 @@ body.body-marshmallow {
 /*-------------------------------delivery*/
 
 .delivery {
-	/*display: flex;
+	display: flex;
 	justify-content: space-between;
-	flex-wrap: wrap;*/
 
 	width: 100%;
 	border-radius: 16px;
@@ -911,9 +917,9 @@ body.body-marshmallow {
 /*-------------------------------footer*/
 .index-footer,
 .catalog-footer {
-	/*display: flex;
+	display: flex;
 	justify-content: space-between;
-	align-items: flex-start;*/
+	align-items: flex-start;
 
 	padding: 48px 14px 48px 4px;
 }
