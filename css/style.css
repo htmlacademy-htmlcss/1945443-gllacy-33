@@ -142,7 +142,7 @@ body.body-marshmallow {
 }
 
 .navigation__list {
-	/*display: flex;*/
+	display: flex;
 	list-style-type: none;
 	padding: 0;
 }
@@ -391,7 +391,7 @@ body.body-marshmallow {
 
 /*-------------------------------socials*/
 .social__list {
-	/*display: flex;*/
+	display: flex;
 
 	margin: 0;
 	padding: 0;
@@ -434,7 +434,7 @@ body.body-marshmallow {
 .gifts__inner {
 	display: flex;
 	justify-content: space-between;
-	/*flex-wrap: wrap;*/
+	flex-wrap: wrap;
 
 	margin: 56px 0 0 0;
 }
@@ -545,9 +545,9 @@ body.body-marshmallow {
 }
 
 .product__buy {
-	/*display: flex;
+	display: flex;
 	justify-content: space-between;
-	align-items: center;*/
+	align-items: center;
 
 	margin: 16px 0 0 0;
 }
@@ -754,7 +754,7 @@ body.body-marshmallow {
 .subscribe__form {
 	margin: 42px 0 0 0;
 
-	/*display: flex;*/
+	display: flex;
 }
 
 .subscribe__email {
@@ -811,16 +811,16 @@ body.body-marshmallow {
 }
 
 .delivery__input {
-	/*display: flex;
+	display: flex;
 	justify-content: space-between;
-	flex-wrap: wrap;*/
+	flex-wrap: wrap;
 
 	margin: 32px 0;
 }
 
 .delivery__input__item {
-	/*display: flex;
-	flex-direction: column;*/
+	display: flex;
+	flex-direction: column;
 }
 
 .delivery__input__item:last-child {
@@ -883,8 +883,8 @@ body.body-marshmallow {
 }
 
 .contacts__text {
-	/*display: flex;
-	flex-direction: column;*/
+	display: flex;
+	flex-direction: column;
 
 	width: 364px;
 	border-radius: 8px;
@@ -986,8 +986,8 @@ body.body-marshmallow {
 }
 
 .footer__author {
-	/*display: flex;
-	flex-direction: column;*/
+	display: flex;
+	flex-direction: column;
 }
 
 .footer__author__text {
@@ -1005,8 +1005,8 @@ body.body-marshmallow {
 /*-------------------------------catalog*/
 
 .path__elements {
-	/*display: flex;
-	align-items: center;*/
+	display: flex;
+	align-items: center;
 
 	list-style-type: none;
 	
@@ -1043,10 +1043,10 @@ body.body-marshmallow {
 }
 
 .filters__list {
-	/*display: flex;
+	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	flex-wrap: wrap;*/
+	flex-wrap: wrap;
 }
 
 .filters__element {
@@ -1070,8 +1070,8 @@ body.body-marshmallow {
 
 .filters-fat__list,
 .filters-fillers__list {
-	/*display: flex;
-	justify-content: flex-start;*/
+	display: flex;
+	justify-content: flex-start;
 
 	list-style-type: none;
 
@@ -1116,8 +1116,8 @@ body.body-marshmallow {
 	position: absolute;
 	right: 0;
 
-	/*display: flex;
-	align-items: center;*/
+	display: flex;
+	align-items: center;
 
 	list-style-type: none;
 
