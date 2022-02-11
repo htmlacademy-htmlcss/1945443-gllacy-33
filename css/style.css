@@ -116,7 +116,7 @@ body.body-marshmallow {
 	width: 100%;
 	max-width: calc(var(--container-width) + 5px + 5px);
 
-	height: 100%;
+	min-height: 100%;
 
 	margin: 0 auto;
 	padding: 0 5px;
