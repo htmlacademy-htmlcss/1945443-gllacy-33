@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/my-normalize.css">
+		<link rel="icon" href="icon.ico">
     <title>HTML Academy: Глейси</title>
   </head>
   <body class="body-strawberry">
@@ -19,10 +21,10 @@
                 <a class="navigation__link button button_menu" href="catalog.html">Каталог</a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link button button_menu" href="#">Доставка и оплата</a>
+                <a class="navigation__link button button_menu" href="index.html#delivery">Доставка и оплата</a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link button button_menu" href="#">О компании</a>
+                <a class="navigation__link button button_menu" href="index.html#ceo">О компании</a>
               </li>
             </ul> <!-- navigation-menu -->
           </div>
@@ -208,7 +210,7 @@
           </ul>
         </section> <!-- gifts -->
 
-        <section class="ceo">
+        <section class="ceo" id="ceo">
           <div class="ceo__inner">
             <h2 class="section__title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес</h2>
             <ul class="ceo__list">
@@ -241,7 +243,7 @@
           </div>
         </section> <!-- updates -->
 
-        <section class="delivery">
+        <section class="delivery" id="delivery">
           <h2 class="visually-hidden">Доставка</h2>
           <div class="delivery__description">
             <h3 class="delivery__description__heading section__title">Доставка любимого мороженого на дом</h3>
@@ -249,25 +251,29 @@
           </div>
 
           <form class="delivery__form" action="https://echo.htmlacademy.ru/" method="post">
-            <h3 class="visually-hidden">Форма доставки</h3>
-            <span class="delivery__hint">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</span>
-            <div class="delivery__input">
-              <label class="delivery__input__item">
-                <span class="delivery__date-heading">Дата</span>
-                <input class="delivery__date input-field" type="text" name="delivery-date" id="delivery-date" placeholder="01.04.2020" pattern="\d{1,2}.\d{1,2}.\d{4}">
-              </label>
+						<fieldset>
+							<legend>
+								<h3 class="visually-hidden">Форма доставки</h3>
+							</legend>
+							<span class="delivery__hint">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</span>
+							<div class="delivery__input">
+								<label class="delivery__input__item">
+									<span class="delivery__date-heading">Дата</span>
+									<input class="delivery__date input-field" type="text" name="delivery-date" id="delivery-date" placeholder="01.04.2020" pattern="\d{1,2}.\d{1,2}.\d{4}">
+								</label>
 
-              <label class="delivery__input__item">
-                <span class="delivery__phone-heading">Телефон</span>
-                <input class="delivery__phone input-field" type="tel" name="delivery-phone" id="delivery-phone" placeholder="+7 800 999-00-00">
-              </label>
+								<label class="delivery__input__item">
+									<span class="delivery__phone-heading">Телефон</span>
+									<input class="delivery__phone input-field" type="tel" name="delivery-phone" id="delivery-phone" placeholder="+7 800 999-00-00">
+								</label>
 
-              <label class="delivery__input__item">
-                <span class="delivery__address-heading">Адрес</span>
-                <input class="delivery__address input-field" type="text" name="delivery-address" id="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
-              </label>
-            </div>
-            <button class="button button_pink" type="submit">Отправить</button>          
+								<label class="delivery__input__item">
+									<span class="delivery__address-heading">Адрес</span>
+									<input class="delivery__address input-field" type="text" name="delivery-address" id="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
+								</label>
+							</div>
+							<button class="button button_pink" type="submit">Отправить</button>
+						</fieldset>          
           </form>
         </section> <!-- delivery -->
 
