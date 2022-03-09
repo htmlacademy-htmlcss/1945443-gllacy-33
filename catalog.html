@@ -17,8 +17,27 @@
                 <img class="navigation__logo__img" src="images/header/gllacy-logo.svg" width="137" height="56" alt="Логотип магазина Глейси">
             </a>
             <ul class="navigation__list navigation-menu">
-              <li class="navigation__item">
-                <a class="navigation__link button button_menu" href="catalog.html">Каталог</a>
+              <li class="navigation__item navigation_catalog">
+                <span class="navigation__link button button_menu">Каталог</span>
+								<div class="submenu-wrapper">
+									<ul class="navigation__submenu">
+										<li class="submenu__heading">
+											Новинки
+										</li>
+										<li class="submenu__item active">
+											<a class="submenu__link" href="catalog.html">Сливочное</a>
+										</li>
+										<li class="submenu__item">
+											<a class="submenu__link" href="catalog.html">Щербеты</a>
+										</li>
+										<li class="submenu__item">
+											<a class="submenu__link" href="catalog.html">Фруктовый лед</a>
+										</li>
+										<li class="submenu__item">
+											<a class="submenu__link" href="catalog.html">Мелорин</a>
+										</li>
+									</ul>
+								</div>
               </li>
               <li class="navigation__item">
                 <a class="navigation__link button button_menu" href="index.html#delivery">Доставка и оплата</a>
@@ -37,17 +56,71 @@
                   <span class="visually-hidden">Поиск</span>
                   <span class="navigation-search"></span>
                 </a>
+								<div class="modal-search">
+									<div class="search__inner">
+										<label class="visually-hidden" for="header-search">Поиск по сайту</label>
+										<input class="input-field" type="search" name="search" id="header-search" placeholder="Поиск по сайту">
+										<span class="search__cross"></span>
+									</div>
+								</div>
               </li>
               <li class="navigation__item">
                 <a class="navigation__link button button_action" href="#">
                   <span class="navigation-login">Вход</span>
                 </a>
+								<div class="modal-login">
+									<div class="login__inner">
+										<fieldset class="login">
+											<legend class="login__heading">Личный кабинет</legend>
+											<form class="login__form" action="https://echo.htmlacademy.ru/" method="post">
+												<input class="input-field" type="email" name="email" placeholder="email@example.com" required>
+												<input class="input-field" type="password" name="password" placeholder="Пароль" required>
+												<div class="login__submit">
+													<input class="button button_pink" type="submit">
+													<div class="login__hints">
+														<span class="login__restore-password">Забыли пароль?</span>
+														<span class="login__registration">Регистрация</span>
+													</div>
+												</div>
+											</form>
+										</fieldset>
+									</div>
+								</div>
               </li>
               <li class="navigation__item">
                 <a class="navigation__link button button_action" href="#">
                   <span class="visually-hidden">Корзина</span>
                   <span class="navigation-cart">Пусто</span>
                 </a>
+								<div class="modal-cart">
+									<div class="cart__inner">
+										<span class="cart__heading">Корзина</span>
+										<ul class="cart__list">
+											<li class="cart__item">
+												<img class="cart__img" src="images/products/product-raspberry.jpg" style="width: 46px; height: 46px;" alt="Сливочное мороженое с малиновым джемом">
+												<div class="cart__info">
+													<span class="cart__product">Малинка</span>
+													<span class="cart__value">1кг x 310₽</span>
+												</div>
+												<span class="cart__price">310₽</span>
+												<span class="cart__cross"></span>
+											</li>
+											<li class="cart__item">
+												<img class="cart__img" src="images/products/product-bubblegum.jpg" style="width: 46px; height: 46px;" alt="Сливочное мороженое с малиновым джемом">
+												<div class="cart__info">
+													<span class="cart__product">Бабл-гам</span>
+													<span class="cart__value">1.5кг x 320₽</span>
+												</div>
+												<span class="cart__price">480₽</span>
+												<span class="cart__cross"></span>
+											</li>
+										</ul>
+										<div class="cart__submit">
+											<input class="button button_pink" type="submit" value="Оформить заказ">
+											<span class="cart__final-price">Итого: 790₽</span>
+										</div> <!-- submit -->
+									</div> <!-- inenr -->
+								</div>
               </li>
             </ul> <!-- navigation-actions -->
           </div>
@@ -381,11 +454,23 @@
               </a>
             </li>
             <li class="pagination__pages">
-              <a class="pagination__page pagination__link pagination-current">1</a>
-              <a class="pagination__page pagination__link" href="#">2</a>
-              <a class="pagination__page pagination__link" href="#">3</a>
-              <a class="pagination__page pagination__link" href="#">4</a>
-              <a class="pagination__page pagination__link" href="#">5</a>
+							<ul class="pagination__links">
+								<li class="pagination__item pagination-current">
+									<a class="pagination__link">1</a>
+								</li>
+								<li class="pagination__item">
+									<a class="pagination__link" href="#">2</a>
+								</li>
+								<li class="pagination__item">
+									<a class="pagination__link" href="#">3</a>
+								</li>
+								<li class="pagination__item">
+									<a class="pagination__link" href="#">4</a>
+								</li>
+								<li class="pagination__item">
+									<a class="pagination__link" href="#">5</a>
+								</li>
+							</ul>
             </li>
             <li class="pagination__button">
               <a class="pagination-next" href="#">
@@ -439,12 +524,12 @@
 
         <section class="footer__author">
           <h2 class="visually-hidden">Авторы</h2>
-          <a class="footer__author__logo-link" href="https://htmlacademy.ru" target="_blank">
-            <img class="footer__author__logo-img" src="images/htmlacademy-logo.svg" width="93" height="27" alt="Логотип HTML Academy">
+          <a class="author__logo-link" href="https://htmlacademy.ru" target="_blank">
+            <img class="author__logo-img" src="images/htmlacademy-logo.svg" width="93" height="27" alt="Логотип HTML Academy">
           </a>
-          <span class="footer__author__text">
+          <span class="author__text">
             Сделано в 
-            <a class="footer__author__link" href="https://htmlacademy.ru" target="_blank">
+            <a class="author__link" href="https://htmlacademy.ru" target="_blank">
               .html academy
             </a> 
             © 2021
