@@ -1,0 +1,32 @@
+fieldset {
+	padding: 0;
+	border: 0 none;
+}
+
+button {
+	padding: 0;
+}
+
+ul, ol {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+a {
+	font-family: inherit;
+	color: inherit;
+	text-decoration: none;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+}
+
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	resize: none;
+}
