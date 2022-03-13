@@ -10,7 +10,7 @@
   </head>
   <body class="body-strawberry">
     <div class="container">
-      <header class="catalog-header">
+      <header class="index-header">
         <nav class="navigation">
           <div class="navigation__pages">
             <a class="navigation__logo" href="index.html">
@@ -18,32 +18,32 @@
             </a>
             <ul class="navigation__list navigation-menu">
               <li class="navigation__item navigation_catalog">
-                <span class="navigation__link button button_menu">Каталог</span>
+                <a class="button button_menu button_submenu" href="catalog.html">Каталог</a>
 								<div class="submenu-wrapper">
 									<ul class="navigation__submenu">
 										<li class="submenu__heading">
 											Новинки
 										</li>
-										<li class="submenu__item active">
+										<li class="submenu__item" tabindex="0">
 											<a class="submenu__link" href="catalog.html">Сливочное</a>
 										</li>
-										<li class="submenu__item">
+										<li class="submenu__item" tabindex="0">
 											<a class="submenu__link" href="catalog.html">Щербеты</a>
 										</li>
-										<li class="submenu__item">
+										<li class="submenu__item" tabindex="0">
 											<a class="submenu__link" href="catalog.html">Фруктовый лед</a>
 										</li>
-										<li class="submenu__item">
+										<li class="submenu__item" tabindex="0">
 											<a class="submenu__link" href="catalog.html">Мелорин</a>
 										</li>
 									</ul>
 								</div>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link button button_menu" href="index.html#delivery">Доставка и оплата</a>
+                <a class="button button_menu" href="index.html#delivery">Доставка и оплата</a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link button button_menu" href="index.html#ceo">О компании</a>
+                <a class="button button_menu" href="index.html#ceo">О компании</a>
               </li>
             </ul> <!-- navigation-menu -->
           </div>
@@ -52,7 +52,7 @@
             <a class="navigation__phone" href="tel:+78005558628">+7 800 555-86-28</a>
             <ul class="navigation__list navigation-actions">
               <li class="navigation__item">
-                <a class="navigation__link button button_search" href="#">
+                <a class="button button_menu button_search" href="#">
                   <span class="visually-hidden">Поиск</span>
                   <span class="navigation-search"></span>
                 </a>
@@ -65,7 +65,7 @@
 								</div>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link button button_action" href="#">
+                <a class="button button_menu button_action" href="#">
                   <span class="navigation-login">Вход</span>
                 </a>
 								<div class="modal-login">
@@ -88,7 +88,7 @@
 								</div>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link button button_action" href="#">
+                <a class="button button_menu button_action" href="#">
                   <span class="visually-hidden">Корзина</span>
                   <span class="navigation-cart">Пусто</span>
                 </a>
@@ -134,13 +134,9 @@
             <li class="path__item">
               <a class="path__previous" href="index.html">Главная</a>
             </li>
-            <li class="path__item path-sign">
-            </li>
             <li class="path__item">
-              <a class="path__previous">Каталог</a>
+              <a class="path__previous" href="#">Каталог</a>
             </li> <!-- при клике на каталог всплывает каталог:hover -->
-            <li class="path__item path-sign"> 
-            </li>
             <li class="path__item">
               <a class="path__current">Сливочное</a>
             </li>
@@ -180,9 +176,11 @@
 									<div class="range-scale">
 										<div class="range-bar" style="left: 42px; width: 136px">
 											<button class="range-toggle toggle-min">
+												<span class="toggle__decorative"></span>
 												<span class="visually-hidden">Изменить минимальную цену.</span>
 											</button>
 											<button class="range-toggle toggle-max">
+												<span class="toggle__decorative"></span>
 												<span class="visually-hidden">Изменить максимальную цену.</span>
 											</button>
 										</div>
