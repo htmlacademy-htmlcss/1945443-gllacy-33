@@ -76,10 +76,10 @@
 												<input class="input-field" type="email" name="email" placeholder="email@example.com" required>
 												<input class="input-field" type="password" name="password" placeholder="Пароль" required>
 												<div class="login__submit">
-													<input class="button button_pink" type="submit">
+													<input class="button button_pink" type="submit" value="Войти">
 													<div class="login__hints">
-														<span class="login__restore-password">Забыли пароль?</span>
-														<span class="login__registration">Регистрация</span>
+														<a class="login__hint" href="#">Забыли пароль?</a>
+														<a class="login__hint" href="#">Регистрация</a>
 													</div>
 												</div>
 											</form>
@@ -92,23 +92,28 @@
                   <span class="visually-hidden">Корзина</span>
                   <span class="navigation-cart">Пусто</span>
                 </a>
-								<div class="modal-cart">
-									<div class="cart__inner">
+								<div class="modal-cart" style="box-shadow: drop-shadow(0px 15px 40px rgba(45, 52, 64, 0.12));">
+									<span class="cart__empty" style="display: none;">Ваша корзина пока пуста</span>
+									<div class="cart__inner" style="display: block;">
 										<span class="cart__heading">Корзина</span>
 										<ul class="cart__list">
 											<li class="cart__item">
-												<img class="cart__img" src="images/products/product-raspberry.jpg" style="width: 46px; height: 46px;" alt="Сливочное мороженое с малиновым джемом">
+												<a href="catalog.html">
+													<img class="cart__img" src="images/products/product-raspberry.jpg" style="width: 46px; height: 46px;" alt="Сливочное мороженое с малиновым джемом">
+												</a>
 												<div class="cart__info">
-													<span class="cart__product">Малинка</span>
+													<a class="cart__product" href="catalog.html">Малинка</a>
 													<span class="cart__value">1кг x 310₽</span>
 												</div>
 												<span class="cart__price">310₽</span>
 												<span class="cart__cross"></span>
 											</li>
 											<li class="cart__item">
-												<img class="cart__img" src="images/products/product-bubblegum.jpg" style="width: 46px; height: 46px;" alt="Сливочное мороженое с малиновым джемом">
+												<a href="catalog.html">
+													<img class="cart__img" src="images/products/product-bubblegum.jpg" style="width: 46px; height: 46px;" alt="Сливочное мороженое с малиновым джемом">
+												</a>
 												<div class="cart__info">
-													<span class="cart__product">Бабл-гам</span>
+													<a class="cart__product" href="catalog.html">Бабл-гам</a>
 													<span class="cart__value">1.5кг x 320₽</span>
 												</div>
 												<span class="cart__price">480₽</span>
@@ -398,7 +403,7 @@
         <section class="footer__links">
           <h2 class="visually-hidden">Ссылки и документы</h2>
           <ul class="footer__links-list">
-            <li class="footer__links-item footer-link-active">
+            <li class="footer__links-item active">
               <a class="footer__link" href="#" target="_blank">Для поставщиков</a>
             </li>
             <li class="footer__links-item">
@@ -431,15 +436,15 @@
 		<div class="modal-feedback" style="display: none;">
 			<div class="feedback__inner">
 				<div class="feedback__window">
-					<fieldset class="feedback">
-						<legend class="feedback__heading">Мы обязательно ответим вам!</legend>
-						<form class="feedback__form" action="https://echo.htmlacademy.ru/" method="post">
+					<form class="feedback">
+						<p class="feedback__heading">Мы обязательно ответим вам!</p>
+						<fieldset class="feedback__form" action="https://echo.htmlacademy.ru/" method="post">
 							<input class="input-field" type="text" name="name-lastname" placeholder="Имя и Фамилия">
 							<input class="input-field" type="email" name="email" placeholder="email@example.com">
 							<textarea class="feedback__message" cols="30" rows="10" name="message" placeholder="В свободной форме"></textarea>
 							<input class="button button_pink" type="submit">
-						</form>
-					</fieldset>
+						</fieldset>
+					</form>
 					<span class="feedback__cross"></span>
 				</div>
 			</div>

@@ -10,7 +10,7 @@
   </head>
   <body class="body-strawberry">
     <div class="container">
-      <header class="index-header">
+			<header class="index-header">
         <nav class="navigation">
           <div class="navigation__pages">
             <a class="navigation__logo" href="index.html">
@@ -24,7 +24,7 @@
 										<li class="submenu__heading">
 											Новинки
 										</li>
-										<li class="submenu__item" tabindex="0">
+										<li class="submenu__item active" tabindex="0">
 											<a class="submenu__link" href="catalog.html">Сливочное</a>
 										</li>
 										<li class="submenu__item" tabindex="0">
@@ -76,10 +76,10 @@
 												<input class="input-field" type="email" name="email" placeholder="email@example.com" required>
 												<input class="input-field" type="password" name="password" placeholder="Пароль" required>
 												<div class="login__submit">
-													<input class="button button_pink" type="submit">
+													<input class="button button_pink" type="submit" value="Войти">
 													<div class="login__hints">
-														<span class="login__restore-password">Забыли пароль?</span>
-														<span class="login__registration">Регистрация</span>
+														<a class="login__hint" href="#">Забыли пароль?</a>
+														<a class="login__hint" href="#">Регистрация</a>
 													</div>
 												</div>
 											</form>
@@ -92,23 +92,28 @@
                   <span class="visually-hidden">Корзина</span>
                   <span class="navigation-cart">Пусто</span>
                 </a>
-								<div class="modal-cart">
-									<div class="cart__inner">
+								<div class="modal-cart" style="box-shadow: drop-shadow(0px 15px 40px rgba(45, 52, 64, 0.12));">
+									<span class="cart__empty" style="display: none;">Ваша корзина пока пуста</span>
+									<div class="cart__inner" style="display: block;">
 										<span class="cart__heading">Корзина</span>
 										<ul class="cart__list">
 											<li class="cart__item">
-												<img class="cart__img" src="images/products/product-raspberry.jpg" style="width: 46px; height: 46px;" alt="Сливочное мороженое с малиновым джемом">
+												<a href="catalog.html">
+													<img class="cart__img" src="images/products/product-raspberry.jpg" style="width: 46px; height: 46px;" alt="Сливочное мороженое с малиновым джемом">
+												</a>
 												<div class="cart__info">
-													<span class="cart__product">Малинка</span>
+													<a class="cart__product" href="catalog.html">Малинка</a>
 													<span class="cart__value">1кг x 310₽</span>
 												</div>
 												<span class="cart__price">310₽</span>
 												<span class="cart__cross"></span>
 											</li>
 											<li class="cart__item">
-												<img class="cart__img" src="images/products/product-bubblegum.jpg" style="width: 46px; height: 46px;" alt="Сливочное мороженое с малиновым джемом">
+												<a href="catalog.html">
+													<img class="cart__img" src="images/products/product-bubblegum.jpg" style="width: 46px; height: 46px;" alt="Сливочное мороженое с малиновым джемом">
+												</a>
 												<div class="cart__info">
-													<span class="cart__product">Бабл-гам</span>
+													<a class="cart__product" href="catalog.html">Бабл-гам</a>
 													<span class="cart__value">1.5кг x 320₽</span>
 												</div>
 												<span class="cart__price">480₽</span>
