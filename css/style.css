@@ -1467,6 +1467,10 @@ body.body-marshmallow {
 	cursor: pointer;
 }
 
+.path__previous:focus {
+	border-bottom: 3px solid var(--basic-extra-dark);
+}
+
 .filters {
 	max-width: 807px;
 
