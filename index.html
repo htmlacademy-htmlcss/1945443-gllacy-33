@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/my-normalize.css">
-		<link type="image/x-icon" href="images/icon.ico" rel="icon">
+		<link rel="icon" href="icon.ico">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/icon.png">
     <title>HTML Academy: Глейси</title>
   </head>
   <body class="body-strawberry">
@@ -267,7 +268,7 @@
               <a class="product__link" href="#">
                 <img class="product__img" src="images/products/product-blueberry.jpg" width="168" height="168" alt="Крем-брюле с черничным джемом">
                 <h3 class="product__name">Черника</h3>
-                <span class="product__description">Крем-брюле с черничным джемом</span>
+                <span class="product__description">Крем-брюле <br> с черничным джемом</span>
               </a>
               <p class="product__buy">
                 <b class="product__price">330 ₽/кг</b>
@@ -281,7 +282,7 @@
               <a class="product__link" href="#">
                 <img class="product__img" src="images/products/product-bubblegum.jpg" width="168" height="168" alt="Ванильный пломбир со сладкой посыпкой">
                 <h3 class="product__name">Бабл-гам</h3>
-                <span class="product__description">Ванильный пломбир со сладкой посыпкой</span>
+                <span class="product__description">Ванильный пломбир <br> со сладкой посыпкой</span>
               </a>
               <p class="product__buy">
                 <b class="product__price">320 ₽/кг</b>
@@ -310,12 +311,12 @@
           <div class="updates__inner">
             <a class="updates__blog updates-item" href="#">
               <h3 class="blog__heading">Новое в нашем блоге</h3>
-              <span class="blog__article">10 способов сервировки фруктовых щербетов к столу</span>
+              <span class="blog__article">10 способов сервировки фруктовых щербетов <br> к столу</span>
             </a>
 
             <div class="updates__subscribe updates-item">
               <div class="subscribe__inner">
-                <span class="subscribe__text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</span>
+                <span class="subscribe__text">Подпишитесь на нашу сладкую рассылку и будьте всегда <br> в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</span>
                 <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
                   <label class="visually-hidden" for="subscribe-email">Email</label>
                   <input class="subscribe__email input-field" name="email" type="email" id="subscribe-email" placeholder="email@example.com">
@@ -343,9 +344,9 @@
 								<div class="delivery__input-item">
 									<label class="delivery__date-heading" for="delivery-date">
 										Дата
-										<div class="tooltip">
+										<span class="tooltip">
 											<span class="tooltip-text">Введите желаемую дату доставки</span>
-										</div>
+										</span>
 									</label>
 									<input class="delivery__date input-field" type="text" name="delivery-date" id="delivery-date" placeholder="01.04.2020" pattern="\d{1,2}.\d{1,2}.\d{4}">
 								</div>
@@ -358,9 +359,9 @@
 								<div class="delivery__input-item">
 									<label class="delivery__address-heading" for="delivery-address">
 										Адрес
-										<div class="tooltip">
+										<span class="tooltip">
 											<span class="tooltip-text">Введите название улицы, дома и квартиры</span>
-										</div>
+										</span>
 									</label>
 									<input class="delivery__address input-field" type="text" name="delivery-address" id="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
 								</div>
@@ -412,11 +413,11 @@
             <li class="footer__links-item active">
               <a class="footer__link" href="#" target="_blank">Для поставщиков</a>
             </li>
-            <li class="footer__links-item">
-              <a class="footer__link" href="#" target="_blank">О производстве</a>
+						<li class="footer__links-item">
+              <a class="footer__link" href="#" target="_blank">Наши документы</a>
             </li>
             <li class="footer__links-item">
-              <a class="footer__link" href="#" target="_blank">Наши документы</a>
+              <a class="footer__link" href="#" target="_blank">О производстве</a>
             </li>
             <li class="footer__links-item">
               <a class="footer__link" href="#" target="_blank">Экологические стандарты</a>
@@ -442,9 +443,9 @@
 		<div class="modal-feedback" style="display: none;">
 			<div class="feedback__inner">
 				<div class="feedback__window">
-					<form class="feedback">
+					<form class="feedback" action="https://echo.htmlacademy.ru/" method="post">
 						<p class="feedback__heading">Мы обязательно ответим вам!</p>
-						<fieldset class="feedback__form" action="https://echo.htmlacademy.ru/" method="post">
+						<fieldset class="feedback__form">
 							<input class="input-field" type="text" name="name-lastname" placeholder="Имя и Фамилия">
 							<input class="input-field" type="email" name="email" placeholder="email@example.com">
 							<textarea class="feedback__message" cols="30" rows="10" name="message" placeholder="В свободной форме"></textarea>

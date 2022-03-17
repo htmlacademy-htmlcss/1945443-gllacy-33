@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/my-normalize.css">
-		<link type="image/x-icon" href="images/icon.ico" rel="icon">
+		<link rel="icon" href="icon.ico">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/icon.png">
     <title>HTML Academy: Глейси</title>
   </head>
   <body class="body-strawberry">
@@ -18,7 +19,7 @@
             </a>
             <ul class="navigation__list navigation-menu">
               <li class="navigation__item navigation_catalog">
-                <a class="button button_menu button_submenu" href="catalog.html">Каталог</a>
+                <a class="button button_menu button_submenu active" href="catalog.html">Каталог</a>
 								<div class="submenu-wrapper">
 									<ul class="navigation__submenu">
 										<li class="submenu__heading">
@@ -147,13 +148,13 @@
             </li>
             <li class="path__item">
               <a class="path__previous" href="#">Каталог</a>
-            </li> <!-- при клике на каталог всплывает каталог:hover -->
+            </li>
             <li class="path__item">
               <a class="path__current">Сливочное</a>
             </li>
           </ul>
           <h2 class="path__heading">Сливочное мороженое</h2>
-        </header> <!-- в элементах catalog__heading, path__current, path__heading - innerHTML заполняется автоматически-->
+        </header>
 
         <section class="filters">
 					<fieldset>
@@ -173,15 +174,15 @@
 							<fieldset class="filters__element filters-price action-form" name="filters-fat">
 								<legend class="filters__heading">
 									Цена:
-									<div class="range-wrapper-inputs">
+									<span class="range-wrapper-inputs">
 										<label class="catalog-filter-label">
-											<input class="range-input" type="number" value="100" name="min-price"> ₽
+											<input class="range-input" type="number" value="100" name="min-price" tabindex="-1"> ₽
 										</label>
 										-
 										<label class="catalog-filter-label">
-											<input class="range-input" type="number" value="500" name="max-price"> ₽
+											<input class="range-input" type="number" value="500" name="max-price" tabindex="-1"> ₽
 										</label>
-									</div>
+									</span>
 								</legend>
 								<div class="range">
 									<div class="range-scale">
@@ -316,7 +317,7 @@
               <a class="product__link" href="#">
                 <img class="product__img" src="images/products/product-blueberry.jpg" width="168" height="168" alt="Крем-брюле с черничным джемом">
                 <h3 class="product__name">Черника</h3>
-                <span class="product__description">Крем-брюле с черничным джемом</span>
+                <span class="product__description">Крем-брюле <br> с черничным джемом</span>
               </a>
               <p class="product__buy">
                 <b class="product__price">330 ₽/кг</b>
@@ -330,7 +331,7 @@
               <a class="product__link" href="#">
                 <img class="product__img" src="images/products/product-bubblegum.jpg" width="168" height="168" alt="Ванильный пломбир со сладкой посыпкой">
                 <h3 class="product__name">Бабл-гам</h3>
-                <span class="product__description">Ванильный пломбир со сладкой посыпкой</span>
+                <span class="product__description">Ванильный пломбир <br> со сладкой посыпкой</span>
               </a>
               <p class="product__buy">
                 <b class="product__price">320 ₽/кг</b>
@@ -519,11 +520,11 @@
             <li class="footer__links-item footer-link-active">
               <a class="footer__link" href="#" target="_blank">Для поставщиков</a>
             </li>
-            <li class="footer__links-item">
-              <a class="footer__link" href="#" target="_blank">О производстве</a>
+						<li class="footer__links-item">
+              <a class="footer__link" href="#" target="_blank">Наши документы</a>
             </li>
             <li class="footer__links-item">
-              <a class="footer__link" href="#" target="_blank">Наши документы</a>
+              <a class="footer__link" href="#" target="_blank">О производстве</a>
             </li>
             <li class="footer__links-item">
               <a class="footer__link" href="#" target="_blank">Экологические стандарты</a>
