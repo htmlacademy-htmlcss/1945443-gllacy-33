@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-		<link rel="icon" href="icon.ico">
-		<link rel="icon" type="image/png" sizes="32x32" href="images/icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <title>HTML Academy: Глейси</title>
   </head>
   <body class="body-strawberry">
@@ -77,9 +76,9 @@
 								<div class="login-wrapper">
 									<div class="modal-login">
 										<div class="login__inner">
-											<form class="login">
-												<legend class="login__heading">Личный кабинет</legend>
-												<fieldset class="login__form" action="https://echo.htmlacademy.ru/" method="post">
+											<form class="login" action="https://echo.htmlacademy.ru/" method="post">
+												<fieldset class="login__form">
+													<legend class="login__heading">Личный кабинет</legend>
 													<label class="visually-hidden" for="login-email">Введите почту здесь.</label>
 													<input class="input-field" type="email" name="email" id="login-email" placeholder="email@example.com" required>
 													<label class="visually-hidden" for="login-password">Введите пароль здесь.</label>
@@ -104,7 +103,7 @@
                   <span class="navigation-cart">Пусто</span>
                 </a>
 								<div class="cart-wrapper">
-									<div class="modal-cart" style="box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);">
+									<div class="modal-cart">
 										<span class="cart__empty" style="display: block;">Ваша корзина пока пуста</span>
 										<div class="cart__inner" style="display: none;">
 											<span class="cart__heading">Корзина</span>
@@ -354,9 +353,9 @@
 								<div class="delivery__input-item">
 									<label class="delivery__date-heading" for="delivery-date">
 										Дата
-										<p class="tooltip">
+										<span class="tooltip">
 											<span class="tooltip-text">Введите желаемую дату доставки</span>
-										</p>
+										</span>
 									</label>
 									<input class="delivery__date input-field" type="text" name="delivery-date" id="delivery-date" placeholder="01.04.2020" pattern="\d{1,2}.\d{1,2}.\d{4}">
 								</div>
@@ -369,9 +368,9 @@
 								<div class="delivery__input-item">
 									<label class="delivery__address-heading" for="delivery-address">
 										Адрес
-										<p class="tooltip">
+										<span class="tooltip">
 											<span class="tooltip-text">Введите название улицы, дома и квартиры</span>
-										</p>
+										</span>
 									</label>
 									<input class="delivery__address input-field" type="text" name="delivery-address" id="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
 								</div>
