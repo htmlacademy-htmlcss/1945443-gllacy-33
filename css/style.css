@@ -1538,13 +1538,14 @@ body.body-marshmallow {
 .footer__links-item:hover .footer__link,
 .footer__links-item:focus .footer__link {
 	outline: none;
-	font-size: 14px;
-	font-weight: bold;
-	line-height: 20px;
+	text-decoration: underline;
 }
 
-.footer__links-item:hover .footer__link::before,
-.footer__links-item:focus .footer__link::before {
+.footer__links-item.active {
+	font-weight: 700;
+}
+
+.footer__links-item.active::before {
 	outline: none;
 	position: absolute;
 	right: calc(100% + 8px);
