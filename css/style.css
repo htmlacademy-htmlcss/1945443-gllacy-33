@@ -98,7 +98,7 @@
 	cursor: pointer;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
 	margin: 0;
 }
 
@@ -215,7 +215,7 @@ body.body-marshmallow {
 /*-------------------------------header*/
 .index-header,
 .catalog-header {
-	padding: 24px 0;
+	padding: 16px 0 24px 0;
 }
 
 .navigation {
@@ -909,8 +909,7 @@ body.body-marshmallow {
 
 	margin: 56px 0 0 0;
 	padding: 40px;
-
-	max-height: 268px;
+	padding-bottom: 38px;
 
 	color: var(--basic-extra-dark);
 	background-color: var(--special-neutral);
@@ -975,7 +974,7 @@ body.body-marshmallow {
 
 	text-align: center;
 
-	padding: 133px 40px 0;
+	padding: 133px 40px 15px;
 
 	background-color: var(--basic-extra-light);
 }
@@ -1196,7 +1195,7 @@ body.body-marshmallow {
 
 	border-radius: 16px;
 
-	padding: 32px 64px 60px 32px;
+	padding: 32px 64px 64px 32px;
 
 	background-color: var(--basic-extra-light);
 	background-image: url(../images/blog-background.jpg);
@@ -1287,7 +1286,7 @@ body.body-marshmallow {
 }
 
 .delivery__description-heading {
-	margin: 6px 0 24px 0;
+	margin: 0 0 24px 0;
 }
 
 .delivery__description__text {
@@ -1314,7 +1313,7 @@ body.body-marshmallow {
 	justify-content: space-between;
 	flex-wrap: wrap;
 
-	margin: 32px 0 32px 0;
+	margin: 32px 0 28px 0;
 }
 
 .delivery__input-item {
@@ -1539,13 +1538,14 @@ body.body-marshmallow {
 .footer__links-item:hover .footer__link,
 .footer__links-item:focus .footer__link {
 	outline: none;
-	font-size: 14px;
-	font-weight: bold;
-	line-height: 20px;
+	text-decoration: underline;
 }
 
-.footer__links-item:hover .footer__link::before,
-.footer__links-item:focus .footer__link::before {
+.footer__links-item.active {
+	font-weight: 700;
+}
+
+.footer__links-item.active::before {
 	outline: none;
 	position: absolute;
 	right: calc(100% + 8px);
@@ -2082,9 +2082,6 @@ body.body-marshmallow {
 
 	padding: 64px;
 
-	display: flex;
-	flex-direction: column;
-
 	background-color: var(--basic-white);
 }
 
@@ -2133,12 +2130,18 @@ body.body-marshmallow {
 	border: 1px solid var(--basic-extra-dark);
 }
 
+.feedback__form .feedback__message:focus {
+	outline: none;
+	padding: 12px 15px;
+	border: 2px solid var(--basic-extra-dark);
+}
+
 .feedback__form .feedback__message:hover::placeholder {
 	color: var(--basic-extra-dark);
 }
 
 .feedback__form .button {
-	margin-top: 32px;
+	margin: 32px 0 0 auto;
 }
 
 .feedback__cross {
