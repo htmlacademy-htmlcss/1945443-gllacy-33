@@ -14,7 +14,7 @@
         <nav class="navigation">
           <div class="navigation__pages">
             <a class="navigation__logo" href="index.html">
-                <img class="navigation__logo__img" src="images/header/gllacy-logo.svg" width="137" height="56" alt="Логотип магазина Глейси">
+                <img class="navigation__logo__img" src="images/header/gllacy-logo.svg" width="137" height="56" alt="Логотип магазина Глейси.">
             </a>
             <ul class="navigation__list navigation-menu">
               <li class="navigation__item navigation_catalog">
@@ -62,7 +62,9 @@
 											<form class="search" action="https://echo.htmlacademy.ru/" method="post">
 												<label class="visually-hidden" for="header-search">Поиск по сайту</label>
 												<input class="input-field" type="search" name="search" id="header-search" placeholder="Поиск по сайту">
-												<span class="search__cross"></span>
+												<button class="search__cross">
+													<span class="visually-hidden">Закрыть.</span>
+												</button>
 											</form>
 										</div>
 									</div>
@@ -109,25 +111,29 @@
 											<ul class="cart__list">
 												<li class="cart__item">
 													<a href="catalog.html">
-														<img class="cart__img" src="images/products/product-raspberry.jpg" style="width: 46px; height: 46px;" alt="Сливочное мороженое с малиновым джемом">
+														<img class="cart__img" src="images/products/product-raspberry.jpg" style="width: 46px; height: 46px;" alt="Сливочное мороженое с малиновым джемом.">
 													</a>
 													<div class="cart__info">
 														<a class="cart__product" href="catalog.html">Малинка</a>
 														<span class="cart__value">1кг x 310₽</span>
 													</div>
 													<span class="cart__price">310₽</span>
-													<span class="cart__cross"></span>
+													<button class="cart__cross">
+														<span class="visually-hidden">Удалить из корзины.</span>
+													</button>
 												</li>
 												<li class="cart__item">
 													<a href="catalog.html">
-														<img class="cart__img" src="images/products/product-bubblegum.jpg" style="width: 46px; height: 46px;" alt="Сливочное мороженое с малиновым джемом">
+														<img class="cart__img" src="images/products/product-bubblegum.jpg" style="width: 46px; height: 46px;" alt="Сливочное мороженое с малиновым джемом.">
 													</a>
 													<div class="cart__info">
 														<a class="cart__product" href="catalog.html">Бабл-гам</a>
 														<span class="cart__value">1.5кг x 320₽</span>
 													</div>
 													<span class="cart__price">480₽</span>
-													<span class="cart__cross"></span>
+													<button class="cart__cross">
+														<span class="visually-hidden">Удалить из корзины.</span>
+													</button>
 												</li>
 											</ul>
 											<div class="cart__submit">
@@ -179,11 +185,11 @@
 								<legend class="filters__heading">
 									Цена:
 									<span class="range-wrapper-inputs">
-										<label class="visually-hidden">Минимальная цена</label>
+										<label class="visually-hidden" for="min-price">Минимальная цена.</label>
 										<input class="range-input" type="number" value="100" name="min-price" id="min-price">
 										<span>₽</span>
-										-
-										<label class="visually-hidden">Максимальная цена</label>
+										<span class="range-separation">–</span>
+										<label class="visually-hidden" for="max-price">Максимальная цена.</label>
 										<input class="range-input" type="number" value="500" name="max-price" id="max-price">
 										<span>₽</span>
 									</span>
@@ -291,168 +297,168 @@
           <ul class="products-list">
             <li class="product creamy">
               <a class="product__link" href="#">
-                <img class="product__img" src="images/products/product-raspberry.jpg" width="168" height="168" alt="Сливочное мороженое с малиновым джемом">
+                <img class="product__img" src="images/products/product-raspberry.jpg" width="168" height="168" alt="Сливочное мороженое с малиновым джемом.">
                 <h3 class="product__name">Малинка</h3>
                 <span class="product__description">Сливочное мороженое с малиновым джемом</span>
               </a>
               <p class="product__buy">
                 <b class="product__price">310 ₽/кг</b>
                 <a class="product__buy-button" href="#">
-                  <span class="visually-hidden">Купить</span>
+                  <span class="visually-hidden">Купить.</span>
                 </a>
               </p>
             </li>
 
             <li class="product creamy">
               <a class="product__link" href="#">
-                <img class="product__img" src="images/products/product-pistachio.jpg" width="168" height="168" alt="Фисташковый пломбир с кусочками шоколада">
+                <img class="product__img" src="images/products/product-pistachio.jpg" width="168" height="168" alt="Фисташковый пломбир с кусочками шоколада.">
                 <h3 class="product__name">Фисташка</h3>
                 <span class="product__description">Фисташковый пломбир с кусочками шоколада</span>
               </a>
               <p class="product__buy">
                 <b class="product__price">340 ₽/кг</b>
                 <a class="product__buy-button" href="#">
-                  <span class="visually-hidden">Купить</span>
+                  <span class="visually-hidden">Купить.</span>
                 </a>
               </p>
             </li>
 
             <li class="product creamy">
               <a class="product__link" href="#">
-                <img class="product__img" src="images/products/product-blueberry.jpg" width="168" height="168" alt="Крем-брюле с черничным джемом">
+                <img class="product__img" src="images/products/product-blueberry.jpg" width="168" height="168" alt="Крем-брюле с черничным джемом.">
                 <h3 class="product__name">Черника</h3>
                 <span class="product__description">Крем-брюле <br> с черничным джемом</span>
               </a>
               <p class="product__buy">
                 <b class="product__price">330 ₽/кг</b>
                 <a class="product__buy-button" href="#">
-                  <span class="visually-hidden">Купить</span>
+                  <span class="visually-hidden">Купить.</span>
                 </a>
               </p>
             </li>
 
             <li class="product creamy">
               <a class="product__link" href="#">
-                <img class="product__img" src="images/products/product-bubblegum.jpg" width="168" height="168" alt="Ванильный пломбир со сладкой посыпкой">
+                <img class="product__img" src="images/products/product-bubblegum.jpg" width="168" height="168" alt="Ванильный пломбир со сладкой посыпкой.">
                 <h3 class="product__name">Бабл-гам</h3>
                 <span class="product__description">Ванильный пломбир <br> со сладкой посыпкой</span>
               </a>
               <p class="product__buy">
                 <b class="product__price">320 ₽/кг</b>
                 <a class="product__buy-button" href="#">
-                  <span class="visually-hidden">Купить</span>
+                  <span class="visually-hidden">Купить.</span>
                 </a>
               </p>
             </li>
 
             <li class="product creamy">
               <a class="product__link" href="#">
-                <img class="product__img" src="images/products/product-blackberry.jpg" width="168" height="168" alt="Сливочное мороженое с ежевичным джемом">
+                <img class="product__img" src="images/products/product-blackberry.jpg" width="168" height="168" alt="Сливочное мороженое с ежевичным джемом.">
                 <h3 class="product__name">Ежевика</h3>
                 <span class="product__description">Сливочное мороженое с ежевичным джемом</span>
               </a>
               <p class="product__buy">
                 <b class="product__price">330 ₽/кг</b>
                 <a class="product__buy-button" href="#">
-                  <span class="visually-hidden">Купить</span>
+                  <span class="visually-hidden">Купить.</span>
                 </a>
               </p>
             </li>
 
             <li class="product creamy">
               <a class="product__link" href="#">
-                <img class="product__img" src="images/products/product-banana.jpg" width="168" height="168" alt="Сливочный пломбир с банановым вкусом">
+                <img class="product__img" src="images/products/product-banana.jpg" width="168" height="168" alt="Сливочный пломбир с банановым вкусом.">
                 <h3 class="product__name">Банан</h3>
                 <span class="product__description">Сливочный пломбир <br> с банановым вкусом</span>
               </a>
               <p class="product__buy">
                 <b class="product__price">340 ₽/кг</b>
                 <a class="product__buy-button" href="#">
-                  <span class="visually-hidden">Купить</span>
+                  <span class="visually-hidden">Купить.</span>
                 </a>
               </p>
             </li>
 
             <li class="product creamy">
               <a class="product__link" href="#">
-                <img class="product__img" src="images/products/product-chocolate.jpg" width="168" height="168" alt="Классический шоколадный пломбир">
+                <img class="product__img" src="images/products/product-chocolate.jpg" width="168" height="168" alt="Классический шоколадный пломбир.">
                 <h3 class="product__name">Шоколадка</h3>
                 <span class="product__description">Классический шоколадный пломбир</span>
               </a>
               <p class="product__buy">
                 <b class="product__price">270 ₽/кг</b>
                 <a class="product__buy-button" href="#">
-                  <span class="visually-hidden">Купить</span>
+                  <span class="visually-hidden">Купить.</span>
                 </a>
               </p>
             </li>
 
             <li class="product creamy">
               <a class="product__link" href="#">
-                <img class="product__img" src="images/products/product-strawberry.jpg" width="168" height="168" alt="Сливочный пломбир с клубничным вкусом">
+                <img class="product__img" src="images/products/product-strawberry.jpg" width="168" height="168" alt="Сливочный пломбир с клубничным вкусом.">
                 <h3 class="product__name">Клубничка</h3>
                 <span class="product__description">Сливочный пломбир <br> с клубничным вкусом</span>
               </a>
               <p class="product__buy">
                 <b class="product__price">300 ₽/кг</b>
                 <a class="product__buy-button" href="#">
-                  <span class="visually-hidden">Купить</span>
+                  <span class="visually-hidden">Купить.</span>
                 </a>
               </p>
             </li>
 
             <li class="product creamy">
               <a class="product__link" href="#">
-                <img class="product__img" src="images/products/product-lemon.jpg" width="168" height="168" alt="Освежающий лимонный сорбет">
+                <img class="product__img" src="images/products/product-lemon.jpg" width="168" height="168" alt="Освежающий лимонный сорбет.">
                 <h3 class="product__name">Лимон</h3>
                 <span class="product__description">Освежающий лимонный сорбет</span>
               </a>
               <p class="product__buy">
                 <b class="product__price">310 ₽/кг</b>
                 <a class="product__buy-button" href="#">
-                  <span class="visually-hidden">Купить</span>
+                  <span class="visually-hidden">Купить.</span>
                 </a>
               </p>
             </li>
 
             <li class="product creamy">
               <a class="product__link" href="#">
-                <img class="product__img" src="images/products/product-mentol.jpg" width="168" height="168" alt="Сливочный пломбир с ментоловым сиропом">
+                <img class="product__img" src="images/products/product-mentol.jpg" width="168" height="168" alt="Сливочный пломбир с ментоловым сиропом.">
                 <h3 class="product__name">Ментол</h3>
                 <span class="product__description">Сливочный пломбир <br> с ментоловым сиропом</span>
               </a>
               <p class="product__buy">
                 <b class="product__price">320 ₽/кг</b>
                 <a class="product__buy-button" href="#">
-                  <span class="visually-hidden">Купить</span>
+                  <span class="visually-hidden">Купить.</span>
                 </a>
               </p>
             </li>
 
             <li class="product creamy">
               <a class="product__link" href="#">
-                <img class="product__img" src="images/products/product-nut.jpg" width="168" height="168" alt="Фисташковый пломбир с шоколадным сиропом">
+                <img class="product__img" src="images/products/product-nut.jpg" width="168" height="168" alt="Фисташковый пломбир с шоколадным сиропом.">
                 <h3 class="product__name">Орешек</h3>
                 <span class="product__description">Фисташковый пломбир с шоколадным сиропом</span>
               </a>
               <p class="product__buy">
                 <b class="product__price">360 ₽/кг</b>
                 <a class="product__buy-button" href="#">
-                  <span class="visually-hidden">Купить</span>
+                  <span class="visually-hidden">Купить.</span>
                 </a>
               </p>
             </li>
 
             <li class="product creamy">
               <a class="product__link" href="#">
-                <img class="product__img" src="images/products/product-brulee.jpg" width="168" height="168" alt="Классическое крем-брюле">
+                <img class="product__img" src="images/products/product-brulee.jpg" width="168" height="168" alt="Классическое крем-брюле.">
                 <h3 class="product__name">Крем-брюле</h3>
                 <span class="product__description">Классическое <br> крем-брюле</span>
               </a>
               <p class="product__buy">
                 <b class="product__price">280 ₽/кг</b>
                 <a class="product__buy-button" href="#">
-                  <span class="visually-hidden">Купить</span>
+                  <span class="visually-hidden">Купить.</span>
                 </a>
               </p>
             </li>
@@ -464,7 +470,7 @@
           <ul class="pagination__list">
             <li class="pagination__button">
               <a class="pagination-prev pagination-disabled">
-                <span class="visually-hidden">Предыдущая страница</span>
+                <span class="visually-hidden">Предыдущая страница.</span>
               </a>
             </li>
             <li class="pagination__pages">
@@ -488,7 +494,7 @@
             </li>
             <li class="pagination__button">
               <a class="pagination-next" href="#">
-                <span class="visually-hidden">Следующая страница</span>
+                <span class="visually-hidden">Следующая страница.</span>
               </a>
             </li>
           </ul>
@@ -502,17 +508,17 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="button button_social social-vkontakte" href="https://vk.com/htmlacademy" target="_blank">
-                <span class="visually-hidden">Группа Глэйси ВКонтакте</span>
+                <span class="visually-hidden">Группа Глэйси ВКонтакте.</span>
               </a>
             </li>
             <li class="social__item">
               <a class="button button_social social-facebook" href="https://www.facebook.com/htmlacademy" target="_blank">
-                <span class="visually-hidden">Страница Глэйси в Фейсбук</span>
+                <span class="visually-hidden">Страница Глэйси в Фейсбук.</span>
               </a>
             </li>
             <li class="social__item">
               <a class="button button_social social-instagram" href="https://www.instagram.com/htmlacademy" target="_blank">
-                <span class="visually-hidden">Инстаграм Глэйси</span>
+                <span class="visually-hidden">Инстаграм Глэйси.</span>
               </a>
             </li>
           </ul> 
@@ -539,7 +545,7 @@
         <section class="footer__author">
           <h2 class="visually-hidden">Авторы</h2>
           <a class="author__logo-link" href="https://htmlacademy.ru" target="_blank">
-            <img class="author__logo-img" src="images/htmlacademy-logo.svg" width="93" height="27" alt="Логотип HTML Academy">
+            <img class="author__logo-img" src="images/htmlacademy-logo.svg" width="93" height="27" alt="Логотип HTML Academy.">
           </a>
           <p class="author__text">
             Сделано в 
